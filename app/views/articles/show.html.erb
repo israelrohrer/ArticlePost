@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Articleid:</strong>
+  <%= @article.articleid %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @article.title %>
+</p>
+
+<p>
+  <strong>Articletext:</strong>
+  <%= @article.articletext %>
+</p>
+
+<p>
+  <strong>Imageone:</strong>
+  <%= @article.imageone %>
+</p>
+
+<p>
+  <strong>Imagetwo:</strong>
+  <%= @article.imagetwo %>
+</p>
+
+<p>
+  <strong>Imagethree:</strong>
+  <%= @article.imagethree %>
+</p>
+
+<p>
+  <strong>Articleauthor:</strong>
+  <%= @article.articleauthor %>
+</p>
+
+<p>
+  <strong>Area:</strong>
+  <%= @article.area %>
+</p>
+
+<p>
+  <strong>Articlecreateddatetime:</strong>
+  <%= @article.articlecreateddatetime %>
+</p>
+
+<p>
+  <strong>Classification:</strong>
+  <%= @article.classification %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @article.url %>
+</p>
+
+<p>
+  <strong>Tag:</strong>
+  <%= @article.tag %>
+</p>
+
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>

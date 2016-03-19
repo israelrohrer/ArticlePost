@@ -1,0 +1,65 @@
+<%= form_for(@article) do |f| %>
+  <% if @article.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@article.errors.count, "error") %> prohibited this article from being saved:</h2>
+
+      <ul>
+      <% @article.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :articleid %><br>
+    <%= f.number_field :articleid %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :articletext %><br>
+    <%= f.text_field :articletext %>
+  </div>
+  <div class="field">
+    <%= f.label :imageone %><br>
+    <%= f.text_field :imageone %>
+  </div>
+  <div class="field">
+    <%= f.label :imagetwo %><br>
+    <%= f.text_field :imagetwo %>
+  </div>
+  <div class="field">
+    <%= f.label :imagethree %><br>
+    <%= f.text_field :imagethree %>
+  </div>
+  <div class="field">
+    <%= f.label :articleauthor %><br>
+    <%= f.number_field :articleauthor %>
+  </div>
+  <div class="field">
+    <%= f.label :area %><br>
+    <%= f.text_field :area %>
+  </div>
+  <div class="field">
+    <%= f.label :articlecreateddatetime %><br>
+    <%= f.datetime_select :articlecreateddatetime %>
+  </div>
+  <div class="field">
+    <%= f.label :classification %><br>
+    <%= f.number_field :classification %>
+  </div>
+  <div class="field">
+    <%= f.label :url %><br>
+    <%= f.text_field :url %>
+  </div>
+  <div class="field">
+    <%= f.label :tag %><br>
+    <%= f.text_field :tag %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
